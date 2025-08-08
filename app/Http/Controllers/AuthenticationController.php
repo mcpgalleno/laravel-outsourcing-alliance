@@ -119,7 +119,7 @@ class AuthenticationController extends Controller
 
             DB::commit();
             session()->flash('notification-status', 'success');
-            session()->flash('notification-msg', 'New user has been successfully created.');
+            session()->flash('notification-msg', 'Successfully signed up.');
             return redirect()->route('login');
 
 
