@@ -1,0 +1,58 @@
+.login-container {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; 
+    border-radius: 10px; 
+    margin-bottom: 150px;
+}
+
+.login-row {
+    height: 100vh; 
+    display: flex; align-items: center;
+}
+
+.login-container label {
+    width: 150px;
+}
+
+.login-questions span {
+    font-size: 12px;
+}
+
+/* Required Fields */
+.required {
+    color: red;
+}
+
+/* Place holders */
+
+.form-control::placeholder {
+    font-size: 12px;
+}
+
+/* Toast */
+.custom-toast {
+    height: 50px;
+    width: 400px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    text-align: center;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 800%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 10000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 10px;
+}
+
+.success-toast span {
+    line-height: 50px;
+    color: green;
+}
+
+.failed-toast span {
+    line-height: 50px;
+    color: red;
+}
